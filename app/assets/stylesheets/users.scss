@@ -1,0 +1,158 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 48%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 0px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 1px;
+    padding: 14px 20px;
+    margin: 0px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    padding: 4px;
+    width: 720px
+    
+}
+.margin-left{
+    margin-left: 600px;
+}
+.setting{
+    display: inline-block;
+    margin-right: 30px;
+}
+p {
+    margin-bottom: 0px;
+}
+.display01{
+    display: inline-block;
+    margin-right: 1200px;
+}
+.display02{
+    margin-left: 669px;
+}
+.leftside{
+    display: inline-block;
+    width: 1600px;
+}
+.rightside{
+    display: inline-block;
+
+    background-color: rgb(142, 238, 145);
+    overflow-y: scroll;
+    height: 279px;
+}
+.rightside1{
+    display: inline-block;
+
+    background-color: rgb(254, 255, 254);
+   
+    height: 200px;
+}
+.rightside2{
+    display: inline-block;
+    margin: 0px;
+    background-color: #fefffe;
+    height: 223px;
+    width: 642px;
+    vertical-align: top;
+}
+
+#customers1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 91%;
+    margin-top: 80px;
+}
+
+#customers1 td, #customers1 th {
+    border: 1px solid #000;
+    padding: 8px;
+}
+.color{
+    background-color: #dcdbdb;
+}
+#customers1 tr:nth-child(even){background-color:  #ffffff;}
+
+#customers1 tr:hover {background-color: #ddd;}
+
+#customers1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.FixedHeightContainer
+{
+  float:right;
+  height: 250px;
+  width:250px; 
+  padding:3px; 
+    background:#f00;
+}
+.Content
+{
+  height:224px;
+   overflow:auto;
+    background:#fff;
+}
+h1{
+    margin: 0%;
+}
+.red{
+    color: red;
+}
+.setting05{
+    display: inline-block;
+}
+#mysetting{
+
+}

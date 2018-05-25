@@ -1,0 +1,31 @@
+<% if flash[:messages] %>
+<% flash[:messages].each  do |m| %>
+    <p class="red"> <%= m %> </p>
+<% end %>
+<% end %>
+<h2 class="setting05">Hi!<%=@user.name%> </h2><br><br>
+<p class ="display02"> <a href="/users/clear">Logout</a></p>
+
+<div>
+
+<form action="/users/new_idea" method="post">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+<input type="text" name="content" placeholder="Post something here">
+<input type="submit" value="idea!">
+</form>
+</div>
+
+<% @post.sort {|x,y| y.likes.count <=> x.likes.count}.each do |s| %>
+
+    
+    <% if s.user_id == @user.id%>
+         <p><a href="/user/<%=s.user.id%>"><%=s.user.name%></a>  Says! <%=s.content%> | | <a href="/post/<%=s.id %>/delete" data-method="delete">Delete</a></p>
+         <p><a href="/secret/<%=s.id%>/like">Like</a>  | | <a href="/bright_idea/<%=s.id%>"><%=s.likes.length%> people</a> like this.</p>
+         <p>---------------------------------------------------------------</p>
+         <% else s.user_id != @user.id%>
+         <p><a href="/user/<%=s.user.id%>"><%=s.user.name%></a>  Says! <%=s.content%></p>
+         <p><a href="/secret/<%=s.id%>/like">Like</a>  | | <a href="/bright_idea/<%=s.id%>"><%=s.likes.length%> people</a> like this.</p>
+         <p>---------------------------------------------------------------</p>
+        <% end %>
+<% end %>
